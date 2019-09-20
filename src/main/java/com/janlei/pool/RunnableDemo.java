@@ -1,8 +1,8 @@
-package com.janlei.test;
+package com.janlei.pool;
 
 import java.util.concurrent.CountDownLatch;
 
-class RunnableDemo implements Runnable {
+public class RunnableDemo implements Runnable {
     public RunnableDemo(){}
     private CountDownLatch cdl=new CountDownLatch(10);
     private Thread t;
@@ -11,7 +11,7 @@ class RunnableDemo implements Runnable {
     {
         slt= Singleton.getInstance();
     }
-   RunnableDemo( String name) {
+   public RunnableDemo(String name) {
       threadName = name;
       System.out.println("Creating " +  threadName );
    }

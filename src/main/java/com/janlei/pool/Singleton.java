@@ -1,4 +1,4 @@
-package com.janlei.test;
+package com.janlei.pool;
 
 public class Singleton implements Cloneable{
     protected RunnableDemo no;
