@@ -3,6 +3,9 @@ package com.janlei.test;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
+/**
+ * test thread
+ */
 public class Test {
     static volatile int i=0;
      public static void main(String[] args) {   
