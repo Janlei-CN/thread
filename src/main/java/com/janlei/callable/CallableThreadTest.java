@@ -1,12 +1,15 @@
 package com.janlei.callable;
 
+import org.junit.Test;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public class CallableThreadTest implements Callable<Integer> {
 
-    public static void run() {
+    @Test
+    public void run() {
         CallableThreadTest ctt = new CallableThreadTest();
         FutureTask<Integer> ft = new FutureTask<>(ctt);
         for (int i = 0; i < 100; i++) {
@@ -32,11 +35,5 @@ public class CallableThreadTest implements Callable<Integer> {
             System.out.println(Thread.currentThread().getName() + " " + i);
         }
         return i;
-    }
-}
-
-class Client {
-    public static void main(String[] args) {
-        CallableThreadTest.run();
     }
 }
