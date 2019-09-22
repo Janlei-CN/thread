@@ -1,4 +1,4 @@
-# thread is a project for testing threadPool
+# Thread is a project for testing threadPool
 ### implements
 * implements Runnable(Interface)
 * extends Thread(Class)
