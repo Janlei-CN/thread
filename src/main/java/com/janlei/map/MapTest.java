@@ -24,5 +24,10 @@ public class MapTest {
         }
     }
 
+    //TODO test Thread
+    public void tread(Map<String,Integer> map){
+
+
+    }
 
 }
