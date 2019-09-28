@@ -48,23 +48,3 @@ public class Singleton implements Cloneable{
 
 
 }
-
-/**
- * dy1020371697
- * 1
- * static789451787
- * dy1950409828
- * 1
- * -----------------
- * 在实例化的编译过程中 JVM会反复加载普通块
- */
-class Client{
-    public static void main(String[] args) {
-        String  s2="zhangsan";
-        String  s1="zhangsan";
-
-        System.out.println(s2.hashCode());
-        System.out.println(s1.hashCode());
-
-    }
-}
