@@ -1,6 +1,10 @@
 package com.janlei.thread.atomic;
 
+import org.junit.Test;
+
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicTest {
@@ -16,6 +20,14 @@ public class AtomicTest {
         count2.incrementAndGet();
     }
 
+    int m3(){
+        count2.addAndGet(1);
+        count2.addAndGet(2);
+        count2.addAndGet(3);
+        count2.addAndGet(4);
+        return count2.get();
+    }
+
     public static void getTime(AtomicTest t,Boolean flag)throws InterruptedException{
         long start = new Date().getTime();
         for (int i = 0; i < 1000; i++) {
@@ -25,6 +37,18 @@ public class AtomicTest {
         }
         long end = new Date().getTime();
         System.out.println("耗用时间 " + (end - start));
+    }
+
+    /**
+     * test Atomicity
+     */
+    @Test
+    public void atomic(){
+        List<Thread> threads = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            threads.add(new Thread(() -> System.out.println(m3())));
+        }
+        threads.forEach(Thread::start);
     }
 
     /**
