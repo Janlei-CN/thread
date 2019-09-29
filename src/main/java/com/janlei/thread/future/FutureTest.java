@@ -21,8 +21,8 @@ public class FutureTest implements Callable<Integer> {
     @Test
     public void test(){
         ExecutorService executor = Executors.newCachedThreadPool();
-        FutureTest task = new FutureTest();
-        Future<Integer> result = executor.submit(task);
+        //FutureTest task = new FutureTest();
+        Future<Integer> result = executor.submit(this);
         executor.shutdown();
 
         try {
