@@ -1,0 +1,144 @@
+[33mcommit ae0af17b217ac019e10fc2bc4ba963350e8a487e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sun Sep 29 09:00:35 2019 +0800
+
+    update FutureTest
+
+[33mcommit 80a6e2a7308684fdfafcf05bf5142afe636b97e2[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sun Sep 29 08:59:15 2019 +0800
+
+    use future
+
+[33mcommit 31cb77eb2db4f613270bbedf2fccc3ea4b1453f1[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 28 09:34:40 2019 +0800
+
+    remove the class of Client
+
+[33mcommit d88ab97c49370166d524018329e7f628f0342c80[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 28 09:29:20 2019 +0800
+
+    test Atomicity
+
+[33mcommit 60974de25b81ac5244ac891d5637ed8b1676171b[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Thu Sep 26 18:57:00 2019 +0800
+
+    compare Atomic to synchronized
+
+[33mcommit 0ae9fa2ef51ecc01c3454fee756b8b85f946a71e[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Wed Sep 25 21:12:13 2019 +0800
+
+    TODO test Thread of HashMap
+
+[33mcommit d212cb95b40bd27704b7a4a172bfb192d7aaf2e7[m
+Merge: ab042fd e1c4565
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Wed Sep 25 21:03:32 2019 +0800
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit ab042fd98b442cfce7bd568fb3e9ab4e0d5ee515[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Wed Sep 25 21:03:08 2019 +0800
+
+    remove psvm
+
+[33mcommit f0c4faea99acdf7f8d3b73758403b0ea4ab3c8a5[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Wed Sep 25 21:02:42 2019 +0800
+
+    test HashMap
+
+[33mcommit e1c4565eadab957c20332c75387bcd3c5f579e22[m
+Author: Janlei-CN <55564642+Janlei-CN@users.noreply.github.com>
+Date:   Sun Sep 22 10:36:23 2019 +0800
+
+    Update README.md
+
+[33mcommit b91be3bdd58505ca771636d710d9a428ee71121f[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sun Sep 22 10:33:34 2019 +0800
+
+    test pool
+
+[33mcommit d5ac5f04bd883e10506a56b28cb9cb8f0130117e[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sun Sep 22 10:31:54 2019 +0800
+
+    add a dependency of junit 4.12
+
+[33mcommit 599d9fdbc3035ffc2e94e2a15f7e215e8feb406c[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sun Sep 22 10:16:31 2019 +0800
+
+    add a description by implementing the interface of Callable
+
+[33mcommit 606a67bfb4677e3f61c5fef59a56bb1a462f9b01[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 21 09:54:17 2019 +0800
+
+    describes the relationship between base classes
+
+[33mcommit e8dd8a43a9d9e0146ff5459aefb8696ffafdcb6f[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 21 09:49:52 2019 +0800
+
+    add pool and entra class
+
+[33mcommit 5d4093bb1f481a94242d8e958d9bceeb3e707a06[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 21 09:45:46 2019 +0800
+
+    remove class ThreadApplication from packge of thread to package of run
+
+[33mcommit 73a1639a7f66258906162c699d55ac30a68a225e[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 21 09:44:21 2019 +0800
+
+    class Thread implements Runnable(interface)
+
+[33mcommit a30bddbe7d1598379c4e8ab599567f63dc01b5b0[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Sat Sep 21 09:42:19 2019 +0800
+
+    test CountDownLatchTest and Executors
+
+[33mcommit 4e6698d40a9542401f8f6eca9fa262bb74b606be[m
+Author: Janlei-CN <55564642+Janlei-CN@users.noreply.github.com>
+Date:   Fri Sep 20 11:31:43 2019 +0800
+
+    Update README.md
+
+[33mcommit 36ab9dd31446e4b5f2e16d0ae4b4a0037c3790c1[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Fri Sep 20 11:30:11 2019 +0800
+
+    test git
+
+[33mcommit f47011921c15ee81448b4a264eec94267d288820[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Fri Sep 20 11:26:27 2019 +0800
+
+    update file
+
+[33mcommit 91595e02687326d2c3749a3914f2785113e5e775[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Fri Sep 20 11:24:40 2019 +0800
+
+    update file
+
+[33mcommit 7baba45412ab187710815795c587a44b7be35ecf[m
+Author: Janlei-CN <55564642+Janlei-CN@users.noreply.github.com>
+Date:   Fri Sep 20 11:18:21 2019 +0800
+
+    Create README.md
+
+[33mcommit a324e4e41dc1d9aac94f382f46b0e80fd4c81266[m
+Author: Janlei-CN <janlei4597@gmail.com>
+Date:   Fri Sep 20 11:12:34 2019 +0800
+
+    Initial commit
