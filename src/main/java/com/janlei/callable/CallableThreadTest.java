@@ -36,4 +36,29 @@ public class CallableThreadTest implements Callable<Integer> {
         }
         return i;
     }
+
+    public static void main(String[] args) {
+
+
+        Callable<Integer> ca = new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                return 1;
+            }
+        };
+
+        //执行结果
+        FutureTask<Integer> ft = new FutureTask<>(ca);
+
+        for (int i = 0; i < 5; i++) {
+            new Thread(ft).run();
+        }
+        try {
+            System.out.println(ft.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
 }
