@@ -11,7 +11,7 @@ public class ExecutorsTest {
     /**
      * inti size==16 0r 无界
      * @param name
-     * @return
+     * @return ExecutorService
      */
     public ExecutorService init(String name){
         switch (name) {
