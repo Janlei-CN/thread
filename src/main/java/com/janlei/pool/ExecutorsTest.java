@@ -1,6 +1,5 @@
 package com.janlei.pool;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -56,13 +55,13 @@ public class ExecutorsTest {
                 System.out.print(i+" ");
             }
         });
-        ex.submit(thread);
-        //ex.execute(thread);
+        ex.submit(thread);//本类的执行方法 返回Future<T>
+        //ex.execute(thread);//父类的方法 执行方法没有返回结果
     }
 
     public static void main(String[] args) {
         ExecutorsTest test = new ExecutorsTest();
-        test.init("cached");
+        test.init("single");
         test.use();
 
     }
