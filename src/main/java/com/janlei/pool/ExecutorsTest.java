@@ -2,11 +2,16 @@ package com.janlei.pool;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class ExecutorsTest {
 
     private ExecutorService ex;
 
+    /**
+     * 线程池
+     */
+    private ThreadPoolExecutor te;
     /**
      * inti size==16 0r 无界
      * @param name
