@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentryLockTest {
 
+    private  static Integer i=0;
     private ReentrantLock lock;
     {
 
@@ -13,9 +14,28 @@ public class ReentryLockTest {
     }
 
     public static void main(String[] args) {
-        ReentryLockTest test = new ReentryLockTest();
+        Thread[] threads = new Thread[100000];
+        for (int j = 0; j < threads.length; j++) {
+                threads[j] = new Thread(() -> {
 
-        test.test();
+                    //保证i++的原子性
+                    synchronized (ReentryLockTest.class) {
+                        i++;
+                    }
+
+                });
+        }
+        for (Thread thread: threads) thread.start();
+        for (Thread thread: threads) {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(i);
+
+        
     }
 
     /**

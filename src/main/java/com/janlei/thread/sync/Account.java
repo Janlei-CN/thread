@@ -22,24 +22,21 @@ public class Account {
 
     public synchronized void set(String name, double balance) {
         this.name = name;
-        try {
-            TimeUnit.SECONDS.sleep(2);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         this.balance = balance;
     }
 
-    public /*synchronized*/ double getBalance() {
+    public synchronized double getBalance() {
         return this.balance;
     }
 
     public static void main(String[] args) {
         Account a = new Account();
-        new Thread(() -> a.set("张三", 100.0)).start();
-        System.out.println(a.getBalance()); // 0.0 
+        System.out.println(a.getBalance()); // 0.0
+        Thread thread = new Thread(() -> a.set("张三", 100.0));
+        thread.start();
+        System.out.println(a.getBalance()); // 0.0
         try {
-            TimeUnit.SECONDS.sleep(3);
+            thread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
