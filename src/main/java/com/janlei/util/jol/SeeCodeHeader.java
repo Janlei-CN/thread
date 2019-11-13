@@ -11,7 +11,9 @@ public class SeeCodeHeader {
 
     @Test
     public void test(){
-        System.out.println(ClassLayout.parseInstance(this).toPrintable());
+        synchronized (this){
+            System.out.println(ClassLayout.parseInstance(this).toPrintable());
+        }
         lock.lock();
         System.out.println(ClassLayout.parseInstance(this).toPrintable());
         lock.unlock();
