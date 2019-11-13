@@ -1,4 +1,4 @@
-package com.janlei.pool;
+package com.janlei.thread.pool;
 
 import org.junit.Test;
 

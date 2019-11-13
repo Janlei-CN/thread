@@ -1,7 +1,7 @@
-package com.janlei.test;
+package com.janlei.util.test;
 
 
-import com.janlei.pool.RunnableDemo;
+import com.janlei.thread.pool.RunnableDemo;
 
 import java.util.concurrent.CountDownLatch;
 

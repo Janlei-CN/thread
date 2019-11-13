@@ -1,4 +1,4 @@
-package com.janlei.callable;
+package com.janlei.thread.callable;
 
 import org.junit.Test;
 

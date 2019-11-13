@@ -1,4 +1,4 @@
-package com.janlei.test;
+package com.janlei.util.test;
 
 
 import java.io.Serializable;
